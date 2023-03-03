@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 
 // finding the number of buttons
-const Pagination_btn = ({ No_pages, setCurrpage, currPage }) => {
+const PaginationBtn = ({ No_pages, setCurrpage, currPage }) => {
     var totalCount = []
     for(let i=1;i<=No_pages;i++){
         totalCount.push(i)
@@ -67,4 +67,4 @@ const Pagination_btn = ({ No_pages, setCurrpage, currPage }) => {
   );
 };
 
-export { Pagination_btn };
+export { PaginationBtn };

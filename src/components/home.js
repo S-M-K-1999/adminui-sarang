@@ -13,7 +13,7 @@ import {
   MDBRow,
   MDBCol,
 } from "mdb-react-ui-kit";
-import {Pagination_btn}from "./pagination/pagination";
+import {PaginationBtn}from "./pagination/pagination";
 
 function Home() {
   const [users, setUsers] = useState([]);
@@ -139,6 +139,7 @@ function Home() {
                 ele.role.toLowerCase().includes(searchValue)){
                   return ele
                 }
+                return ''
               }).slice(firstIndex,lastPostIndex)
                 .map((ele) => (
                   <MDBTableBody className={ele.isChecked ? 'userSelected':''}>
@@ -186,7 +187,11 @@ function Home() {
         </MDBRow>
         <button className="delete-rows" onClick={deleteMultiple}>Delete Selected</button>
         {/* pagination */}
-        <Pagination_btn No_pages={No_pages} setCurrpage={setCurrpage} currPage={currPage}/>
+        <PaginationBtn 
+          No_pages={No_pages} 
+          setCurrpage={setCurrpage} 
+          currPage={currPage}
+        />
       </div>
     </div>
   );
