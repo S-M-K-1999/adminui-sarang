@@ -1,0 +1,33 @@
+.pagination-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.paginationBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: blue;
+    border-color: blue;
+}
+.active{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.disabled{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(90, 90, 90);
+    color: rgb(0, 0, 0);
+    cursor: no-drop !important;
+}

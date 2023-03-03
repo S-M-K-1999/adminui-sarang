@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.deleteBtn button{
+    border-radius: 20px;
+    background-color: rgb(236, 83, 83);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.editbtn{
+    border: none;
+    background:transparent;
+}
+.delete-rows{
+    width: 150px;
+    height: 30px !important;
+    border-radius: 20px !important;
+    align-items: start !important;
+    background-color: rgb(228, 102, 102);
+    border: none;
+    color: white;
+}
+.userSelected{
+    background-color: rgb(216, 216, 216);
+}
